@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import SideBar from '/Users/user/Desktop/headwind/src/Components/SideBar/Index';
+import Channelbar from '/Users/user/Desktop/headwind/src/Components/ChannelBar/Index';
+import ContentContainer from '/Users/user/Desktop/headwind/src/Components/ContentContainer/Index';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex">
+      <SideBar />
+      <Channelbar />
+      <ContentContainer />
     </div>
   );
 }
